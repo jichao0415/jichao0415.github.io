@@ -1,0 +1,7 @@
+_site/
+.DS_Store
+.*.swp
+.idea
+Gemfile
+Gemfile.lock
+vendor/
