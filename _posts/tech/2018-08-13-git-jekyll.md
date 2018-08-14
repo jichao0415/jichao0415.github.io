@@ -1,8 +1,7 @@
 ---
 layout: post
 title: How to create a blog with Github and Jekyll
-categories:
-- tech
+category: tech
 tags: [github,jekyll,blog]
 ---
 

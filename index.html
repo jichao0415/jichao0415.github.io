@@ -4,6 +4,20 @@ title: My Posts
 ---
 
 <div id="home">
+  <div id="search-container">
+      <input type="text" id="search-input" placeholder="search...">
+      <ul id="results-container"></ul>
+  </div>
+  <script src="{{ site.baseurl }}/js/simple-jekyll-search.min.js"></script>
+  <script>
+    SimpleJekyllSearch({
+      searchInput: document.getElementById('search-input'),
+      resultsContainer: document.getElementById('results-container'),
+      json: '/search.json',
+      searchResultTemplate: '<li><a href="{{ site.url }}{url}">{title}</a></li>'
+    })
+  </script>
+  
   <h2><i class="fa fa-bookmark"></i> Blog Posts</h2>
   <ul id="blog-posts" class="posts">
     {% for post in site.posts %}
