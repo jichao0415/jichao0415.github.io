@@ -102,20 +102,20 @@ sudo apt install libffi-dev
 
 in your blog folder:
 
-    ```shell
-    vim Gemfile
-    ```
+```shell
+vim Gemfile
+```
 
 inside Gemfile, add these two lines
 
-    ```
-    source 'https://rubygems.org'      
-    gem 'github-pages'
-    ```
+```
+source 'https://rubygems.org'      
+gem 'github-pages'
+```
 
 And then in your blog folder:
 
-    ```shell
-    bundle install --path vendor/bundle
-    bundle exec jekyll serve
-    ```
+```shell
+bundle install --path vendor/bundle
+bundle exec jekyll serve
+```
